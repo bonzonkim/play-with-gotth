@@ -1,0 +1,19 @@
+package templates
+
+templ HomeContent() {
+  <div class="text-center">
+    <h1 class="text-4xl font-bold text-blue-600">Home Templ</h1>
+    <button
+      class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    >
+      Say Hello Again
+    </button>
+  </div>
+}
+
+templ Home() {
+  <html lang="en">
+  @Layout(HomeContent(), "Home")
+  <script src="https://unpkg.com/htmx.org@2.0.2"></script>
+  </html>
+}
